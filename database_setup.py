@@ -4,6 +4,7 @@ from sqlalchemy import Column, ForeignKey, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
+from config_db import DATABASE_URL
 
 Base = declarative_base()
 
@@ -60,6 +61,5 @@ class MenuItem(Base):
         }
 
 
-engine = create_engine('sqlite:///restaurantmenu.db')
-# engine = create_engine('URL_DATA')
+engine = create_engine(DATABASE_URL)
 Base.metadata.create_all(engine)
