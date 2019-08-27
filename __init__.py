@@ -2,15 +2,11 @@
 import json
 import os
 import random
-import requests
 import string
-import httplib2
 
 from flask import Flask, render_template, request, flash
 from flask import redirect, jsonify, url_for, make_response
 from flask import session as login_session
-
-from urllib.parse import urlencode
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
@@ -28,7 +24,7 @@ DBSession = sessionmaker(bind=engine)
 session = scoped_session(DBSession)
 
 
-# Irá redirecionar para que seja mostrado todos os Restaurantes e Itens
+# Ira redirecionar para que seja mostrado todos os Restaurantes e Itens
 @app.route('/')
 @app.route('/restaurant/')
 def showRestaurants():
