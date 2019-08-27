@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import json
 import os
 import random
@@ -175,6 +175,6 @@ def deleteMenuItem(restaurant_id, menu_id):
                                item=itemToDelete)
 
 
-#if __name__ == '__main__':
-#    app.debug = True
-#    app.run(host='0.0.0.0', port=5000, threaded=False)
+if __name__ == '__main__':
+    app.debug = True
+    app.run(host='0.0.0.0', port=5000, threaded=False)
