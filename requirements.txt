@@ -32,7 +32,7 @@ Click==7.0
 Flask==1.1.1
 Flask-HTTPAuth==3.3.0
 Flask-SQLAlchemy==2.4.0
-httplib2==0.13.1
+httplib2==0.18.0
 itsdangerous==1.1.0
 Jinja2==2.10.1
 language-selector==0.1
